@@ -9,4 +9,3 @@ class DataReader(ABC):
     def read(self, path: str) -> DataType:
         pass
 
-class JSONRead(DataReader):

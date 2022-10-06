@@ -3,6 +3,7 @@ import argparse
 import sys
 
 from CalcRating import CalcRating
+from QuartileCalc import QuartileCalc
 from TextDataReader import TextDataReader
 
 
@@ -22,7 +23,7 @@ def main():
     print("Students: ", students)
 
     rating = CalcRating(students).calc()
-    print("Rating: ", rating)
+    QuartileCalc(rating).calc()
 
 
 if __name__ == "__main__":
